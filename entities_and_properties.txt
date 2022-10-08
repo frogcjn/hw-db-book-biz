@@ -1,20 +1,20 @@
 /*
 1. Create a list of the entities and properties of the book industry
 
-    Entity: Books
-        BookID
-        PublisherID
-        Name
-        Price
-        Date
-
     Entity: Publishers
         PublisherID
         Name
+        Website
         Address
         Phone
         Email
 
+    Entity: Books
+        BookID
+        Name
+        Price
+        Date
+        PublisherID
 
     Entity: Authors
         AuthorID
@@ -34,11 +34,6 @@
         GenreID
         Name
 
-    Entity: Orders
-        OrderID
-        CustomerID
-        Date
-
     Entity: Customers
         CustomerID
         Name
@@ -46,6 +41,11 @@
         Phone
         Email
     
+    Entity: Orders
+        OrderID
+        CustomerID
+        Date
+
     Entity: BookAuthors
         BookID
         AuthorID
@@ -62,6 +62,7 @@
     Entity: BookOrders
         BookID
         OrderID
+        Amount
 
 */
 
